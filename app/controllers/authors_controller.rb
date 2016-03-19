@@ -16,7 +16,7 @@ class AuthorsController < ApplicationController
 			flash[:success] = 'Author has been created'
 			redirect_to @author
 		else
-			flash[:danger] = ''
+			flash[:danger] = 'Author has not been created'
 			render :new
 		end
 	end
